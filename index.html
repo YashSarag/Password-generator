@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./fevicon2.png" class="icon">
+    <title>Password Generator</title>
+</head>
+<body class="league-sparton">
+    <div id="wrapper">
+        <div class="container">
+
+            <div class="main-heading">PASSWORD GENERATOR</div>
+            <!-- Display Password -->
+            <div class="display-box">
+                <input readonly placeholder="PASSWORD" value="" display-password class="">
+                <!-- Copy button -->
+                <div class="copy-btn">
+                    <!-- copy msg -->
+                    <div class="copy-message" copy-message>Copied</div>
+                    <button onclick="copyMessageToClipboard()">
+                        <i class="fa-regular fa-clone"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Input box -->
+            <div class="input-box">
+                <!-- Password length -->
+                <div class="password-len-container">
+                    <div class="">Password Length</div>
+                    <!-- display length -->
+                    <div class="" password-length>0</div>
+                </div>
+
+                <!-- Slider -->
+                <input input-slider value="10" type="range" min="1" max="20"  class="slider">
+
+                <!-- Password Options -->
+                <div class="check-list">
+                    <div class="check-container">
+                        <input type="checkbox" id="upper" upper class="check" >
+                        <label for="upper">Include Uppercase Letters</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" id="lower" lower class="check">
+                        <label for="lower">Include Lowercase Letters</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" id="numbers" numbers class="check">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" id="symbols" symbols class="check">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+
+
+                </div>
+                <!-- Strength -->
+                <div class="strength-container">
+                    <div class="">Strength</div>
+                    <div class="" strength></div>
+                </div>
+
+                <!-- Generate Password button -->
+                <button class="generate-password-btn" generate-password>GENERATE PASSWORD</button>
+
+            </div>       
+
+
+        </div>
+    </div>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
