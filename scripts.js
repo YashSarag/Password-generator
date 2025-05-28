@@ -33,7 +33,7 @@ function setPasswordLen(){
 }
 
 function setStrength(color){ //20 8
-    strength.setAttribute('style',`background-color: ${color+'90'};box-shadow: 0px 0px 30px 4px ${color+'80'}`)
+    strength.setAttribute('style',`background-color: ${color};box-shadow: 0px 0px 30px 4px ${color+'80'}`)
     
 }
 
